@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.js"
+    "dev": "nodemon --exec babel-node src/index.js",
+    "now": "nodemon --exec babel-node src/now.js"
   },
   "repository": {
     "type": "git",
@@ -26,10 +27,14 @@
     "prettier": "^2.4.1"
   },
   "dependencies": {
+    "@binance-chain/bsc-connector": "^1.0.0",
+    "@binance-chain/javascript-sdk": "^4.2.0",
     "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",
     "dotenv": "^10.0.0",
     "knex": "^0.95.14",
-    "pg": "^8.7.1"
+    "lodash": "^4.17.21",
+    "pg": "^8.7.1",
+    "web3": "^1.6.1"
   }
 }
